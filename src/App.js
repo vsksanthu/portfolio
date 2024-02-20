@@ -77,9 +77,11 @@ const Home = React.forwardRef((props, ref) => {
 
 const App = () => {
   const titleRef = React.useRef();
-
+  console.log("console",process.env.PUBLIC_URL);
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL + "/"}>
+    
+    <BrowserRouter basename={'/home'}>
+      {/* <BrowserRouter basename={process.env.PUBLIC_URL + "/home"}></BrowserRouter> */}
       {navBar.show && <Navbar ref={titleRef} />}
       <Routes>
         <Route path="/" exact element={<Home ref={titleRef} />} />
