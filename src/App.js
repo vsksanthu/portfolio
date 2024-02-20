@@ -80,8 +80,8 @@ const App = () => {
   console.log("console",process.env.PUBLIC_URL);
   return (
     
-    // <BrowserRouter basename={'/portfolio'}>
-     <BrowserRouter basename={process.env.PUBLIC_URL + "/portfolio"}>
+     <BrowserRouter basename={'/portfolio'}>
+     {/* <BrowserRouter basename={process.env.PUBLIC_URL + "/portfolio"}> */}
       {navBar.show && <Navbar ref={titleRef} />}
       <Routes>
         <Route path="/" exact element={<Home ref={titleRef} />} />
