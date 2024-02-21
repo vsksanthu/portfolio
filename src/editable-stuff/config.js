@@ -54,7 +54,7 @@ const about = {
   imageLink: require("../editable-stuff/santhoshkumar.jpg"),
   imageSize: 375,
   message:
-    "Hey there! I'm Santhosh Kumar, a frontend enthusiast with a knack for crafting beautiful and functional web experiences using React.js. With a background in Information and Technology during UG, I've dived headfirst into the world of frontend development and havent looked back since. My passion for coding stems from my love of problem-solving and creativity. I thrive on the challenge of turning ideas into reality and enjoy the satisfaction of seeing my projects come to life. Whether it's designing pixel-perfect UI components or optimizing performance for seamless user interactions, I'm always eager to tackle new challenges and push the boundaries of whats possible. From startups to established companies, I've worked on a range of projects, each presenting its unique set of opportunities and learnings. When I am not coding, you can find exploring nature, playing cricket, or experimenting with new recipes. I believe in maintaining a healthy work-life balance and find that my passions outside of coding often inspire fresh ideas and perspectives in my work. Thanks for stopping by, and I hope you enjoy exploring my portfolio.",
+    "Hey there! I'm Santhosh Kumar, a frontend enthusiast with a knack for crafting beautiful and functional web experiences using Frontend Technologies. With a background in Information and Technology during UG, I've dived headfirst into the world of frontend development and havent looked back since. My passion for coding stems from my love of problem-solving and creativity. I thrive on the challenge of turning ideas into reality and enjoy the satisfaction of seeing my projects come to life. From startups to established companies, I've worked on a range of projects, each presenting its unique set of opportunities and learnings. I believe in maintaining a healthy work-life balance and find that my passions outside of coding often inspire fresh ideas and perspectives in my work. Thanks for stopping by, and I hope you enjoy exploring my portfolio.",
   resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
 };
 
@@ -64,7 +64,7 @@ const about = {
 // If you want to display specfic projects, add the repository names,
 //      i.e ["repository-1", "repo-2"]
 const repos = {
-  show: true,
+  show: false,
   heading: "Recent Projects",
   gitHubUsername: "vsksanthu", //i.e."johnDoe12Gh"
   reposLength: 4,
@@ -108,6 +108,8 @@ const skills = {
     { name: "Redux", value: 65 },
     { name: "MySQL", value: 55 },
     { name: "Material UI", value: 80 },
+    { name: "CI/CD", value: 55 },
+    { name: "Generative AI", value: 50 },
   ],
   softSkills: [
     { name: "Goal-Oriented", value: 80 },
@@ -162,4 +164,12 @@ const experiences = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences };
+//Achievements Section
+const achievements = {
+  show:true,
+  heading:"Experience",
+  title:'Best Customer Satisfication Award - 2014',
+  companyName: 'Nichehands'
+}
+
+export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences, achievements };
